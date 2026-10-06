@@ -8,3 +8,9 @@ npm install --save-dev supertest
 npm pkg set type=module
 npm pkg set scripts.start="node server.js"
 npm pkg set scripts.test="node --test"
+
+change app.js:
+
+app.get('/', (req, res) => {
+  res.status(200).send('<h1>Hello World</h1>');
+});
