@@ -1,0 +1,10 @@
+mkdir express-testing-demo
+cd express-testing-demo
+npm init -y
+
+npm install express
+npm install --save-dev supertest
+
+npm pkg set type=module
+npm pkg set scripts.start="node server.js"
+npm pkg set scripts.test="node --test"
